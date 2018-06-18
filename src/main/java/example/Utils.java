@@ -162,4 +162,11 @@ public class Utils
         return intArr;
     }
 
+    // 测试文件流
+    public static void main(String[] args)
+    {
+        List<String> str = readOutFile("in.txt");
+        
+        System.out.println(str);
+    }
 }

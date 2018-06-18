@@ -22,7 +22,7 @@ public class QSortTest
     {
         // 从文档获取的所有的字符串集合
         List<String> allList = new ArrayList<String>();
-        allList = Utils.readOutFile("/in.txt");
+        allList = Utils.readOutFile("in.txt");
         // 将总的字符串集合分割成n个字符串集合，这里n=3
         List<List<String>> lists = Utils.averageAssign(allList, 3);
         List<List<String>> newLists = new ArrayList<List<String>>();
@@ -51,7 +51,7 @@ public class QSortTest
         // 打印排序完成后的集合
         System.out.println(newList.toString());
         // 将已排序的字符串集合按行写入out.txt文件
-        Utils.writeFile("/out.txt", newList);
+        Utils.writeFile("out.txt", newList);
         
     }
     
